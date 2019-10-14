@@ -26,6 +26,7 @@ ul li {
 
 .wrapper {
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
 }
 
 .header {
@@ -339,13 +340,14 @@ ul li {
 }
 
 .pagination {
+    text-align: center;
     margin: auto;
     max-width: 500px;
     margin-bottom: 60px;
 }
 
 .pagination__item {
-    margin-left: 8px;
+   /* margin-left: 8px;*/
 }
 
 .pagination__text {
@@ -368,7 +370,7 @@ ul li {
     color: white;
     background-color: #4b73b5;
 }
-.pagination__button-next, .pagination__button-prev {
+ .pagination__button-prev {
     margin-left: 20px;
 }
 
