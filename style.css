@@ -35,8 +35,11 @@ ul li {
 }
 
 .header__container {
-    height: 77px;
-    position: relative;
+   /* height: 77px;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
 }
 
 .container {
@@ -45,18 +48,13 @@ ul li {
 }
 
 .logo {
-    position: absolute;
-    top: 20px;
-    left: 0;
 
 }
 
 .contacts {
-    position: absolute;
-    right: 0;
-    top: 20px;
     color: #ffffff;
     text-align: right;
+    font-style: normal;
 }
 
 .contacts__phone {
@@ -74,9 +72,8 @@ ul li {
     text-decoration: underline;
 }
 
-.main-content, .sidebar {
-    display: inline-block;
-    vertical-align: top;
+.page-content__container {
+    display: flex;
 }
 
 .nav__list {
@@ -86,14 +83,21 @@ ul li {
     letter-spacing: 2.4px;
     text-transform: uppercase;
     color: #7a97c8;
+    display: flex;
+    flex-direction: column;
 }
 
-.nav__link, .nav__link:before {
-    display: inline-block;
-    vertical-align: middle;
+.nav__link {
+    display: inline-flex;
+    align-items: center;
 }
+
 .nav__list-item a {
     color: #86a1cd;
+}
+
+.nav__list-item--active a {
+    color: black;
 }
 .nav__link:hover {
     color: #221f1f;
@@ -101,6 +105,7 @@ ul li {
 
 .nav__link:before {
     content: "";
+    display: inline-block;
     width: 23px;
     height: 18px;
     margin-right: 16px;
@@ -131,12 +136,24 @@ ul li {
     background-image: url("img/crew-icon-active.png");
 }
 
+.nav__list-item--active .nav__link--icon-main:before {
+    background-image: url("img/main-icon-active.png");
+}
+
+.nav__list-item--active .nav__link--icon-review:before {
+    background-image: url("img/main-icon-active.png");
+}
+
+.nav__list-item--active .nav__link--icon-crew:before {
+    background-image: url("img/main-icon-active.png");
+}
+
 .main-content {
-    width: 896px;
+    width: 80%;
 }
 
 .sidebar {
-    width: 200px;
+    width: 20%;
     margin-top: 10px;
 }
 
@@ -151,18 +168,23 @@ ul li {
     line-height: 38px;
     font-size: 49px;
 }
+
+.rates {
+    margin-bottom: 35px;
+}
 .rates__title {
     margin-bottom: 27px;
 }
 
 .rates__list {
     margin-bottom: 61px;
+    width: 85%;
+    display: flex;
 }
 
 .rates__item {
     padding: 43px 0;
-    display: inline-block;
-    width: 250px;
+    flex: 1;
     text-align: center;
     border: 1px solid white;
 }
@@ -236,7 +258,6 @@ ul li {
     width: 185px;
     display: inline-block;
     text-align: left;
-    margin-bottom: 35px;
 }
 
 
@@ -256,6 +277,7 @@ ul li {
 }
 
 .rates__item-price {
+    margin-top: 35px;
     font-size: 54px;
     font-weight: 400;
 }
@@ -270,35 +292,39 @@ ul li {
     margin-bottom: 72px;
 }
 
-
 .news__item {
     border-bottom: 1px solid #e8e9ed;
+    display: flex;
+    align-items: center;
+    justify-content: left;
 }
+
 
 .news__item:last-child {
     border-bottom: none;
 }
 
-.news__item-text {
-    display: inline-block;
-    padding: 30px 0;
-    vertical-align: middle;
+.news__item-img {
+    max-width: 18%;
 }
 
-.news__item-img {
-    display: inline-block;
-    width: 160px;
-    height: 160px;
+.news__item-text {
+    max-width: 82%;
+    padding: 30px 0;
+
+}
+
+.round-pic {
+    max-width: 160px;
+    max-height: 160px;
     border-radius: 50%;
     overflow: hidden;
-    vertical-align: middle;
 }
 
 .news__item-pic {
     height: 100%;
     width: 100%;
     object-fit: cover;
-
 }
 
 .news__item-text {
@@ -330,20 +356,16 @@ ul li {
     line-height: 30px;
 }
 
-.pagination__text,
-.pagination__bar,
-.pagination__list,
-.pagination__button-next,
-.pagination__button-prev,
-.pagination__item {
-    display: inline-block;
-}
+
 
 .pagination {
     text-align: center;
     margin: auto;
     max-width: 500px;
     margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+
 }
 
 .pagination__item {
@@ -355,6 +377,17 @@ ul li {
     font-size: 14px;
     font-weight: 300;
     line-height: 21px;
+}
+.pagination__list {
+    display: flex;
+
+}
+
+.pagination-bar {
+    display: flex;
+    align-items:center
+
+
 }
 
 .pagination__link {
@@ -377,6 +410,7 @@ ul li {
 .pagination__button-prev, .pagination__button-next {
      opacity: 0.3;
      color: #656464;
+
 }
 
 .pagination__button-prev:hover, .pagination__button-next:hover {
@@ -391,10 +425,12 @@ ul li {
 .footer__container {
     height: 77px;
     position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .footer__descr, .footer .logo, .social-networks {
-    position: absolute;
     top: 14px;
 }
 
