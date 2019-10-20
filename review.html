@@ -24,18 +24,18 @@
                 <nav class="nav">
                     <ul class="nav__list">
                         <li class="nav__list-item ">
-                            <a href="#" class="nav__link nav__link--icon-main"><span>Главная</span></a>
+                            <a href="index.html" class="nav__link nav__link--icon-main"><span>Главная</span></a>
                         </li>
                         <li class="nav__list-item nav__list-item--active">
-                            <a href="#" class="nav__link nav__link--icon-review"><span>Отзывы</span></a>
+                            <a href="review.html" class="nav__link nav__link--icon-review"><span>Отзывы</span></a>
                         </li>
                         <li class="nav__list-item">
-                            <a href="#" class="nav__link nav__link--icon-crew"><span>Экипаж</span></a>
+                            <a href="crew.html" class="nav__link nav__link--icon-crew"><span>Экипаж</span></a>
                         </li>
                     </ul>
                 </nav>
             </aside>
-            <div class="main-content">
+            <main class="main-content">
                 <nav class="breadcrumbs">
                     <ul class="breadcrumbs__list">
                         <li class="breadcrumbs__item">Главная</li>
@@ -145,43 +145,52 @@
                         </div>
                     </div>
                 </div>
-                <div class="banner">
-                    <div class="banner__text"><p>Вопросы по бронированию билетов в нашей авиакомпании принимаются. Для
-                        этого можно оставить <a>заявку на сайте</a> или же позвонить по номеру круглосуточной поддержки
-                        <b>8 (800) 00-392-10</b>.</p>
+
+            </main>
+        </div>
+        <div class="banner container page-content__container">
+            <aside class="sidebar"></aside>
+            <div class="banner__text main-content ">
+                <p>Вопросы по бронированию билетов в нашей авиакомпании принимаются. Для
+                этого можно оставить <a>заявку на сайте</a> или же позвонить по номеру круглосуточной поддержки
+                <b>8 (800) 00-392-10</b>.</p>
+            </div>
+        </div>
+        <div class="review-form container page-content__container">
+            <aside class="sidebar"></aside>
+            <div class="form">
+                <div class="form__title title">Оставить отзыв</div>
+                <div class="form__content">
+                    <div class="form__row">
+                        <label class="form__label">
+                            <div class="form__subtitle">Ваше имя</div>
+                            <input type="text" class="form__input" placeholder="Андрей" placeholder="name">
+                        </label>
+                        <label class="form__label">
+                            <div class="form__subtitle">Ссылка на профиль вк</div>
+                            <input type="text" class="form__input" placeholder="vk.com/example">
+                        </label>
                     </div>
-                </div>
-                <div class="form">
-                    <div class="form__title title">Оставить отзыв</div>
-                    <div class="form__content">
-                        <div class="form__row">
-                            <label class="form__label">
-                                <div class="form__subtitle">Ваше имя</div>
-                                <input type="text" class="form__input" value="Андрей" placeholder="name">
-                            </label>
-                            <label class="form__label">
-                                <div class="form__subtitle">Ссылка на профиль вк</div>
-                                <input type="text" class="form__input" placeholder="vk.com/example">
-                            </label>
-                        </div>
-                        <div class="form__row">
-                            <label class="form__label">
-                                <div class="form__subtitle">Текст отзыва</div>
-                                <textarea name="" id="" cols="30" rows="10" class="form__texarea"
-                                          placeholder="мне понравилось"></textarea>
-                            </label>
-                        </div>
-                        <div class="form__row">
-                            <label class="form__label">
-                                <span class="form__subtitle"></span>
+                    <div class="form__row">
+                        <label class="form__label">
+                            <div class="form__subtitle">Текст отзыва</div>
+                            <textarea name="" id=""  class=" form__input form__texarea"
+                                      placeholder="мне понравилось"></textarea>
+                        </label>
+                    </div>
+                    <div class="form__row ">
+                        <label class="form__label bottom-row">
+                            <div class ="form__quest">
+                                <span class="form__subtitle">Отображать фото в отзыве?</span>
                                 <input type="radio" class="form__radio">
                                 <input type="radio" class="form__radio">
-                                <button class="form__button" type="submit"></button>
-                            </label>
-                        </div>
+                            </div>
+                            <button class="form__button" type="submit">Отправить</button>
+                        </label>
                     </div>
                 </div>
             </div>
+            <aside class="sidebar"></aside>
         </div>
     </div>
     <footer class="footer">
