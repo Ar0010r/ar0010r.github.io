@@ -38,8 +38,8 @@
             <main class="main-content">
                 <nav class="breadcrumbs">
                     <ul class="breadcrumbs__list">
-                        <li class="breadcrumbs__item">Главная</li>
-                        <li class="breadcrumbs__item">Отзывы</li>
+                        <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
+                        <li class="breadcrumbs__item"><a href="review.html">Отзывы</a></li>
                     </ul>
                 </nav>
                 <div class="review">
@@ -182,10 +182,20 @@
                         <label class="form__label bottom-row">
                             <div class ="form__quest">
                                 <span class="form__subtitle">Отображать фото в отзыве?</span>
-                                <input type="radio" class="form__radio">
-                                <input type="radio" class="form__radio">
+                                <div class="form__radio-wrapp">
+                                    <label class="form__radio-label">
+                                        <input type="radio" name="yes" class="form_radio-radio">
+                                        <span class="form__radio-fake"></span>
+                                        <span class="form__radio-text">да</span>
+                                    </label>
+                                    <label class="form__radio-label">
+                                        <input type="radio" name="no" class="form_radio-radio">
+                                        <span class="form__radio-fake"></span>
+                                        <span class="form__radio-text">нет</span>
+                                    </label>
+                                </div>
                             </div>
-                            <button class="form__button" type="submit">Отправить</button>
+                            <button class="form__button" type="submit"><span class="form__button-span">Отправить</span></button>
                         </label>
                     </div>
                 </div>
