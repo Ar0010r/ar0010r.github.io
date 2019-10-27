@@ -21,6 +21,45 @@
     <div class="page-content">
         <div class="container page-content__container">
             <aside class="sidebar">
+                <div class="banner ">
+                    <div class="banner__text">
+                        <p>Вопросы по бронированию билетов в нашей авиакомпании принимаются.<br> Для
+                            этого можно оставить <a>заявку на сайте</a> или же позвонить по номеру круглосуточной поддержки<br>
+                            <b>8 (800) 00-392-10</b>.</p>
+                    </div>
+                </div>
+                <div class="social-networks">
+                    <span class="social-networks__title">Наши социальные сети</span>
+                    <ul class="social-networks__list">
+                        <li class="social-networks__item">
+                            <div class="social-networks-circle social-networks__item-vk">
+                                <a href="#" class="social-networks__link"></a>
+                            </div>
+                        </li>
+                        <li class="social-networks__item">
+                            <div class="social-networks-circle social-networks__item-fb">
+                                <a href="#" class="social-networks__link"></a>
+                            </div>
+                        </li>
+                        <li class="social-networks__item">
+                            <div class="social-networks-circle social-networks__item-g">
+                                <a href="#" class="social-networks__link"></a>
+                            </div>
+                        </li>
+                        <li class="social-networks__item">
+                            <div class="social-networks-circle social-networks__item-tw">
+                                <a href="#" class="social-networks__link"></a>
+                            </div>
+                        </li>
+                        <li class="social-networks__item">
+                            <div class="social-networks-circle social-networks__item-m">
+                                <a href="#" class="social-networks__link"></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            <main class="main-content">
                 <nav class="nav">
                     <ul class="nav__list">
                         <li class="nav__list-item ">
@@ -32,14 +71,6 @@
                         <li class="nav__list-item">
                             <a href="crew.html" class="nav__link nav__link--icon-crew"><span>Экипаж</span></a>
                         </li>
-                    </ul>
-                </nav>
-            </aside>
-            <main class="main-content">
-                <nav class="breadcrumbs">
-                    <ul class="breadcrumbs__list">
-                        <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
-                        <li class="breadcrumbs__item"><a href="review.html">Отзывы</a></li>
                     </ul>
                 </nav>
                 <div class="review">
@@ -145,61 +176,52 @@
                         </div>
                     </div>
                 </div>
-
-            </main>
-        </div>
-        <div class="banner ">
-            <div class="banner__text container page-content__container ">
-                <p>Вопросы по бронированию билетов в нашей авиакомпании принимаются. Для
-                этого можно оставить <a>заявку на сайте</a> или же позвонить по номеру круглосуточной поддержки
-                <b>8 (800) 00-392-10</b>.</p>
-            </div>
-        </div>
-        <div class="review-form container page-content__container">
-            <aside class="sidebar"></aside>
-            <div class="form">
-                <div class="form__title title">Оставить отзыв</div>
-                <div class="form__content">
-                    <div class="form__row">
-                        <label class="form__label">
-                            <div class="form__subtitle">Ваше имя</div>
-                            <input type="text" class="form__input" placeholder="Андрей" placeholder="name">
-                        </label>
-                        <label class="form__label">
-                            <div class="form__subtitle">Ссылка на профиль вк</div>
-                            <input type="text" class="form__input" placeholder="vk.com/example">
-                        </label>
-                    </div>
-                    <div class="form__row">
-                        <label class="form__label">
-                            <div class="form__subtitle">Текст отзыва</div>
-                            <textarea name="" id=""  class=" form__input form__texarea"
-                                      placeholder="мне понравилось"></textarea>
-                        </label>
-                    </div>
-                    <div class="form__row ">
-                        <label class="form__label bottom-row">
-                            <div class ="form__quest">
-                                <span class="form__subtitle">Отображать фото в отзыве?</span>
-                                <div class="form__radio-wrapp">
-                                    <label class="form__radio-label">
-                                        <input type="radio" name="quest" class="form_radio-radio">
-                                        <span class="form__radio-fake"></span>
-                                        <span class="form__radio-text">да</span>
-                                    </label>
-                                    <label class="form__radio-label">
-                                        <input type="radio" name="quest" class="form_radio-radio">
-                                        <span class="form__radio-fake"></span>
-                                        <span class="form__radio-text">нет</span>
-                                    </label>
-                                </div>
+                <div class="review-form container">
+                    <div class="form">
+                        <div class="form__title title">Оставить отзыв</div>
+                        <div class="form__content">
+                            <div class="form__row">
+                                <label class="form__label">
+                                    <div class="form__subtitle">Ваше имя</div>
+                                    <input type="text" class="form__input" placeholder="Андрей">
+                                </label>
+                                <label class="form__label">
+                                    <div class="form__subtitle">Ссылка на профиль вк</div>
+                                    <input type="text" class="form__input" placeholder="vk.com/example">
+                                </label>
                             </div>
-                            <button class="form__button" type="submit"><span class="form__button-span">Отправить</span></button>
-                        </label>
+                            <div class="form__row">
+                                <label class="form__label">
+                                    <div class="form__subtitle">Текст отзыва</div>
+                                    <textarea name="" id=""  class=" form__input form__texarea"
+                                              placeholder="мне понравилось"></textarea>
+                                </label>
+                            </div>
+                            <div class="form__row ">
+                                <label class="form__label bottom-row">
+                                    <div class ="form__quest">
+                                        <span class="form__subtitle">Отображать фото в отзыве?</span>
+                                        <div class="form__radio-wrapp">
+                                            <label class="form__radio-label">
+                                                <input type="radio" name="quest" class="form_radio-radio">
+                                                <span class="form__radio-fake"></span>
+                                                <span class="form__radio-text">да</span>
+                                            </label>
+                                            <label class="form__radio-label">
+                                                <input type="radio" name="quest" class="form_radio-radio">
+                                                <span class="form__radio-fake"></span>
+                                                <span class="form__radio-text">нет</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <button class="form__button" type="submit"><span class="form__button-span">Отправить</span></button>
+                                </label>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <aside class="sidebar"></aside>
+
+            </main>
         </div>
     </div>
     <footer class="footer">
@@ -210,36 +232,6 @@
             <a href="index.html" class="logo">
                 <img class="logo__img" src="img/airplanet-logo.png" alt="airplanet-logo">
             </a>
-            <div class="social-networks">
-                <span class="social-networks__title">Наши социальные сети</span>
-                <ul class="social-networks__list">
-                    <li class="social-networks__item">
-                        <div class="social-networks-circle social-networks__item-vk">
-                            <a href="#" class="social-networks__link"></a>
-                        </div>
-                    </li>
-                    <li class="social-networks__item">
-                        <div class="social-networks-circle social-networks__item-fb">
-                            <a href="#" class="social-networks__link"></a>
-                        </div>
-                    </li>
-                    <li class="social-networks__item">
-                        <div class="social-networks-circle social-networks__item-g">
-                            <a href="#" class="social-networks__link"></a>
-                        </div>
-                    </li>
-                    <li class="social-networks__item">
-                        <div class="social-networks-circle social-networks__item-tw">
-                            <a href="#" class="social-networks__link"></a>
-                        </div>
-                    </li>
-                    <li class="social-networks__item">
-                        <div class="social-networks-circle social-networks__item-m">
-                            <a href="#" class="social-networks__link"></a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
         </div>
     </footer>
 </div>

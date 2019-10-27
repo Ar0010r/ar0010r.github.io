@@ -14,13 +14,64 @@
             </a>
             <address class="contacts">
                 <a href="tel:+788000039210" class="contacts__phone">8(800)00-392-10</a>
-                <div class="contacts__schedule">График работы</div>
+                <div class="contacts__schedule">
+                    <a class="contacts__link">График работы</a>
+                    <div class="contacts__timetable">
+                        <div class="contacts__info">
+                            <div class="contacts__days">пн-вс: 09:00-20:00</div>
+                            <div class="contacts__break">обед: 14:00-14:30</div>
+                        </div>
+                    </div>
+                </div>
             </address>
         </div>
     </header>
     <div class="page-content">
         <div class="container page-content__container">
             <aside class="sidebar">
+                <div class="top-rate">
+                    <div class="top-rate__title">Топ тариф</div>
+                    <div class="rates__item-name">Стандарт</div>
+                    <div class="rates__item-descr">Создан для вашего комфортного отдыха</div>
+                    <ul class="rates__item-list">
+                        <li class="rates__item-list-name">Питание включено</li>
+                        <li class="rates__item-list-name">Багаж (5кг)</li>
+                        <li class="rates__item-list-name">Детское кресло</li>
+                    </ul>
+                    <span class="rates__item-price"><span class="rates__item-currency">$</span>19</span>
+                </div>
+                <div class="social-networks">
+                    <span class="social-networks__title">Наши социальные сети</span>
+                    <ul class="social-networks__list">
+                        <li class="social-networks__item">
+                            <div class="social-networks-circle social-networks__item-vk">
+                                <a href="#" class="social-networks__link"></a>
+                            </div>
+                        </li>
+                        <li class="social-networks__item">
+                            <div class="social-networks-circle social-networks__item-fb">
+                                <a href="#" class="social-networks__link"></a>
+                            </div>
+                        </li>
+                        <li class="social-networks__item">
+                            <div class="social-networks-circle social-networks__item-g">
+                                <a href="#" class="social-networks__link"></a>
+                            </div>
+                        </li>
+                        <li class="social-networks__item">
+                            <div class="social-networks-circle social-networks__item-tw">
+                                <a href="#" class="social-networks__link"></a>
+                            </div>
+                        </li>
+                        <li class="social-networks__item">
+                            <div class="social-networks-circle social-networks__item-m">
+                                <a href="#" class="social-networks__link"></a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+            <main class="main-content">
                 <nav class="nav">
                     <ul class="nav__list">
                         <li class="nav__list-item nav__list-item--active">
@@ -34,63 +85,18 @@
                         </li>
                     </ul>
                 </nav>
-            </aside>
-            <main class="main-content">
                 <img class="main-content__pic" src="img/airplanet-plain.jpg" alt="airplanet-plane">
                 <div class="content">
-                    <section class="rates">
-                        <h2 class="rates__title title">Тарифы</h2>
-                        <ul class="rates__list">
-                            <li class="rates__item">
-                                <div class="rates__item-circle rates__item-circle--icon--standard">
-                                    <!--<img class="rates__item-pic" src="img/standard-rate.png" alt="standard-rate">-->
-                                </div>
-                                <div class="rates__item-name">Стандарт</div>
-                                <div class="rates__item-descr">Создан для вашего комфортного отдыха</div>
-                                <ul class="rates__item-list">
-                                    <li class="rates__item-list-name">Питание включено</li>
-                                    <li class="rates__item-list-name">Багаж (5кг)</li>
-                                    <li class="rates__item-list-name">Детское кресло</li>
-                                </ul>
-                                <span class="rates__item-price"><span class="rates__item-currency">$</span>19</span>
-                            </li>
-                            <li class="rates__item">
-                                <div class="rates__item-circle rates__item-circle--icon--premium">
-                                    <!--      <img class="rates__item-pic" src="#" alt="premium-rate">-->
-                                </div>
-                                <span class="rates__item-name">Премиум</span>
-                                <span class="rates__item-descr">Для любителей хороших впечатлений</span>
-                                <ul class="rates__item-list">
-                                    <li class="rates__item-list-name">Питание включено</li>
-                                    <li class="rates__item-list-name">Багаж (5кг)</li>
-                                    <li class="rates__item-list-name">Детское кресло</li>
-                                </ul>
-                                <span class="rates__item-price"><span class="rates__item-currency">$</span>39</span>
-                            </li>
-                            <li class="rates__item">
-                                <div class="rates__item-circle rates__item-circle--icon--lux">
-                                </div>
-                                <span class="rates__item-name">Лакшери</span>
-                                <span class="rates__item-descr">Все самое лучшее и незабываемое</span>
-                                <ul class="rates__item-list">
-                                    <li class="rates__item-list-name">Питание включено</li>
-                                    <li class="rates__item-list-name">Багаж (5кг)</li>
-                                    <li class="rates__item-list-name">Детское кресло</li>
-                                </ul>
-                                <span class="rates__item-price"><span class="rates__item-currency">$</span>99</span>
-                            </li>
-                        </ul>
-                    </section>
                     <section class="news">
                         <h2 class="news__title title">Последние новости</h2>
                         <ul class="news__list">
-                            <li class="news__item item">
-                                <div class="news__item-img item-img">
+                            <li class="news__item ">
+                                <div class="news__item-img">
                                     <div class="round-pic">
                                         <img class="news__item-pic item-pic" src="img/miles.jpg" alt="cheap-tickets">
                                     </div>
                                 </div>
-                                <div class="news__item-text item-text">
+                                <div class="news__item-text">
                                     <span class="news__item-date item-date">12.10.2016</span>
                                     <span class="news__item-title item-title">Ночные перелеты дешевле</span>
                                     <p>Летящий в ночном небе самолет — зрелище загадочное и романтическое. Крылатая
@@ -99,14 +105,14 @@
                                         очень важным делам. .</p>
                                 </div>
                             </li>
-                            <li class="news__item item">
-                                <div class = "news__item-img item-img">
+                            <li class="news__item ">
+                                <div class = "news__item-img">
                                     <div class="round-pic">
                                 <img class="news__item-pic item-pic" src="img/miles.jpg" alt="cheap-flights">
                                     </div>
                                 </div>
-                                <div class="news__item-text item-text">
-                                    <span class="news__item-date item-date">12.10.2016</span>
+                                <div class="news__item-text ">
+                                    <span class="news__item-date ">12.10.2016</span>
                                     <span class="news__item-title item-title">Путешествие в Грузию стало доступнее</span>
                                     <p>Экскурсии по Грузии в 2017 году от русских гидов: самые интересные маршруты в
                                         Грузии от профессиональных гидов. Обзорные, пешеходные, автомобильные,
@@ -114,14 +120,14 @@
                                         такую возможность!</p>
                                 </div>
                             </li>
-                            <li class="news__item item">
-                                <div class = "news__item-img item-img">
+                            <li class="news__item ">
+                                <div class = "news__item-img">
                                     <div class="round-pic">
                                 <img class="news__item-pic item-pic" src="img/miles.jpg" alt="business-class">
                                 </div>
                                 </div>
-                                <div class="news__item-text item-text">
-                                    <span class="news__item-date item-date">12.10.2016</span>
+                                <div class="news__item-text">
+                                    <span class="news__item-date">12.10.2016</span>
                                     <span class="news__item-title item-title">Детские авиабилеты доступны для бизнес класса</span>
                                     <p>Путешествие на самолете с детьми - небольшое испытание для родителей.
                                         Но это не экстремальное приключение, а обычный цивилизованный поход.
@@ -173,36 +179,7 @@
             <a href="index.html" class="logo">
                 <img class="logo__img" src="img/airplanet-logo.png" alt="airplanet-logo">
             </a>
-            <div class="social-networks">
-                <span class="social-networks__title">Наши социальные сети</span>
-                <ul class="social-networks__list">
-                    <li class="social-networks__item">
-                        <div class="social-networks-circle social-networks__item-vk">
-                            <a href="#" class="social-networks__link"></a>
-                        </div>
-                    </li>
-                    <li class="social-networks__item">
-                        <div class="social-networks-circle social-networks__item-fb">
-                            <a href="#" class="social-networks__link"></a>
-                        </div>
-                    </li>
-                    <li class="social-networks__item">
-                        <div class="social-networks-circle social-networks__item-g">
-                            <a href="#" class="social-networks__link"></a>
-                        </div>
-                    </li>
-                    <li class="social-networks__item">
-                        <div class="social-networks-circle social-networks__item-tw">
-                            <a href="#" class="social-networks__link"></a>
-                        </div>
-                    </li>
-                    <li class="social-networks__item">
-                        <div class="social-networks-circle social-networks__item-m">
-                            <a href="#" class="social-networks__link"></a>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+
         </div>
     </footer>
 </div>
