@@ -44,7 +44,7 @@ ul li {
 
 .container {
     margin: 0 auto;
-    width: 1200px;
+    width: 1150px;
 
 }
 
@@ -72,11 +72,13 @@ ul li {
 }
 
 .contacts__timetable{
+
     margin-top: 15px;
     position: absolute;
+    right: -15px;
     opacity: 0;
     width: 170px;
-    height: 80px;
+    /*height: 80px;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -102,7 +104,7 @@ ul li {
 
 }
 
-.contacts__timetable:hover{
+.contacts__schedule:hover .contacts__timetable{
     opacity: 1;
 }
 
@@ -110,6 +112,8 @@ ul li {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
 }
 
@@ -117,6 +121,7 @@ ul li {
     font-size: 14px;
     font-weight: 700;
     color: #1c5bc3;
+    margin-bottom: 3px;
 }
 
 .contacts__break {
@@ -129,8 +134,10 @@ ul li {
 }
 .nav {
     margin-top: -5px;
-
     margin-left: 5px;
+    margin-bottom: -6px;
+
+
 
 }
 .nav__list {
@@ -143,6 +150,9 @@ ul li {
     display: flex;
     justify-content: space-between;
     width: 500px;
+    margin-left: 5px;
+
+
 }
 
 /*.nav__list-item {
@@ -216,8 +226,14 @@ ul li {
     background: url('img/sprites.png') -10px -10px;
 }
 
+.main {
+    margin-left: 10px;
+
+
+}
+
 .main-content {
-   /* width: 70%;*/
+    /*width: 78%;*/
     flex: 1;
 }
 
@@ -232,8 +248,12 @@ ul li {
 
 .main-content__pic {
     display: block;
-    margin-bottom: 19px;
+
     max-width: 100%;
+    height: 294px;
+
+    margin-left: 10px;
+
 }
 
 .title {
@@ -369,22 +389,42 @@ ul li {
     border: 1px solid #e8e9ed;
     padding: 30px 5px 40px 5px;
     width: 100%;
+    margin-left: 5px;
 }
 
 .top-rate__title{
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
-    margin-bottom: 30px;
+    margin-bottom: 26px;
+}
+
+.rates__item-name {
+    margin-bottom: 20px;
+}
+.rates__item-descr {
+    margin-bottom: 8px;
 }
 .news {
-    margin-top: 30px;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-bottom: -14px;
+
+}
+
+.news__title {
+    margin-bottom: 49px;
+
 }
 .news__list {
     display: flex;
     width: 100%;
     justify-content: space-between;
-    margin-top: 40px;
+    margin-left: 3px;
+    margin-bottom: 35px;
+
+
+
 
 }
 .news__item {
@@ -396,15 +436,20 @@ ul li {
 .news__item:last-child{
     margin-right: 0;
 }
+
+.news__item-img {
+    margin-left: 18px;
+
+}
 .news__item-text {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 50px;
+    margin-top: 44px;
 
 }
 .news__item-title {
-    margin-top: 5px;
+    margin-top: 1px;
 
 }
 
@@ -474,9 +519,10 @@ ul li {
     margin: auto;
     max-width: 500px;
     margin-bottom: 60px;
-    margin-top: 45px;
     display: flex;
     align-items: center;
+    margin-left: 200px;
+
 
 }
 
@@ -489,9 +535,16 @@ ul li {
     font-size: 14px;
     font-weight: 300;
     line-height: 21px;
+    margin-right: 14px;
+
 }
 .pagination__list {
     display: flex;
+
+}
+
+.pagination__item{
+    margin-right: -3px;
 
 }
 
@@ -563,7 +616,8 @@ ul li {
 }
 
 .social-networks {
-    margin-top: 15px;
+    margin-top: 19px;
+    margin-left: 15px;
 
 }
 
@@ -664,6 +718,8 @@ ul li {
 
 .crew {
     margin-bottom: 80px;
+    margin-left: 12px;
+    margin-top: -5px;
 }
 .crew__title{
     margin-top: 30px;
@@ -765,7 +821,7 @@ ul li {
 }
 .partners__item {
 
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     text-align: center;
     max-width: 100%;
 
@@ -782,12 +838,18 @@ ul li {
 
 /*===============REVIEW========================*/
 
+.review {
+    margin-top: -20px;
+}
+
 .review__title {
     padding-top: 28px;
 }
 
 .review__list {
     padding-top: 20px;
+    margin-left: 10px;
+
 }
 
 .review__item-date, .review__item-title, .review__item-text p {
@@ -795,10 +857,14 @@ ul li {
 }
 
 .review .pagination {
-    margin-top: 50px;
+    margin-top: 40px;
+    margin-left: 220px;
+
 }
 
 .banner {
+    width: 100%;
+
     background: #4bb56b;
     display: flex;
     align-items: center;
@@ -826,6 +892,8 @@ ul li {
 .review-form {
     margin-top: 60px;
     margin-bottom: 60px;
+    margin-left: 20px;
+
 
 }
 .form{
@@ -885,6 +953,7 @@ ul li {
 }
 
 .form__quest {
+    margin-top: -10px;
     display: flex;
     flex-direction: column;
 }
@@ -903,6 +972,8 @@ ul li {
     border-radius: 4px;
     cursor: pointer;
     padding: 0;
+    margin-right: -25px;
+
 
 }
 .form__button-span {
