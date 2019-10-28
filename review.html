@@ -12,15 +12,23 @@
             <a href="index.html" class="logo">
                 <img class="logo__img" src="img/airplanet-logo.png" alt="airplanet-logo">
             </a>
-            <div class="contacts">
+            <address class="contacts">
                 <a href="tel:+788000039210" class="contacts__phone">8(800)00-392-10</a>
-                <div class="contacts__schedule">График работы</div>
-            </div>
+                <div class="contacts__schedule">
+                    <a class="contacts__link">График работы</a>
+                    <div class="contacts__timetable">
+                        <div class="contacts__info">
+                            <div class="contacts__days">пн-вс: 09:00-20:00</div>
+                            <div class="contacts__break">обед: 14:00-14:30</div>
+                        </div>
+                    </div>
+                </div>
+            </address>
         </div>
     </header>
     <div class="page-content">
         <div class="container page-content__container">
-            <aside class="sidebar">
+            <aside class="sidebar banner-container">
                 <div class="banner ">
                     <div class="banner__text">
                         <p>Вопросы по бронированию билетов в нашей авиакомпании принимаются.<br> Для
@@ -176,7 +184,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="review-form container">
+                <div class="review-form <!--container-->">
                     <div class="form">
                         <div class="form__title title">Оставить отзыв</div>
                         <div class="form__content">
@@ -186,15 +194,15 @@
                                     <input type="text" class="form__input" placeholder="Андрей">
                                 </label>
                                 <label class="form__label">
-                                    <div class="form__subtitle">Ссылка на профиль вк</div>
+                                    <div class="form__subtitle form__subtitle-vk">Ссылка на профиль вк</div>
                                     <input type="text" class="form__input" placeholder="vk.com/example">
                                 </label>
                             </div>
                             <div class="form__row">
-                                <label class="form__label">
+                                <label class="form__label form__label-textarea">
                                     <div class="form__subtitle">Текст отзыва</div>
                                     <textarea name="" id=""  class=" form__input form__texarea"
-                                              placeholder="мне понравилось"></textarea>
+                                              placeholder="мне   понравилось"></textarea>
                                 </label>
                             </div>
                             <div class="form__row ">
