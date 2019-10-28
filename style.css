@@ -75,7 +75,7 @@ ul li {
 
     margin-top: 15px;
     position: absolute;
-    right: -15px;
+    right: -999999999px;
     opacity: 0;
     width: 170px;
     /*height: 80px;*/
@@ -104,8 +104,20 @@ ul li {
 
 }
 
+.contacts__timetable:after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    opacity: 0;
+    top: -20px;
+    background: black;
+    width: 100%;
+    height: 20px;
+}
+
 .contacts__schedule:hover .contacts__timetable{
     opacity: 1;
+    right: -15px;
 }
 
 .contacts__info {
