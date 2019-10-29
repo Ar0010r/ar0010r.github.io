@@ -28,7 +28,7 @@
     </header>
     <div class="page-content">
         <div class="container page-content__container">
-            <aside class="sidebar banner-container">
+            <aside class="sidebar sidebar-container">
                 <div class="banner ">
                     <div class="banner__text">
                         <p>Вопросы по бронированию билетов в нашей авиакомпании принимаются.<br> Для
@@ -159,7 +159,7 @@
                             <a href="#" class="pagination__button-prev">&lt</a>
                             <ul class="pagination__list">
                                 <li class="pagination__item">
-                                    <a href="#" class="pagination__link">1</a>
+                                    <a href="#" class="pagination__link pagination__link-active">1</a>
                                 </li>
                                 <li class="pagination__item">
                                     <a href="#" class="pagination__link">2</a>
@@ -184,48 +184,50 @@
                         </div>
                     </div>
                 </div>
-                <div class="review-form <!--container-->">
+                <div class="review-form">
                     <div class="form">
                         <div class="form__title title">Оставить отзыв</div>
-                        <div class="form__content">
-                            <div class="form__row">
-                                <label class="form__label">
-                                    <div class="form__subtitle">Ваше имя</div>
-                                    <input type="text" class="form__input" placeholder="Андрей">
-                                </label>
-                                <label class="form__label">
-                                    <div class="form__subtitle form__subtitle-vk">Ссылка на профиль вк</div>
-                                    <input type="text" class="form__input" placeholder="vk.com/example">
-                                </label>
-                            </div>
-                            <div class="form__row">
-                                <label class="form__label form__label-textarea">
-                                    <div class="form__subtitle">Текст отзыва</div>
-                                    <textarea name="" id=""  class=" form__input form__texarea"
-                                              placeholder="мне   понравилось"></textarea>
-                                </label>
-                            </div>
-                            <div class="form__row ">
-                                <label class="form__label bottom-row">
-                                    <div class ="form__quest">
-                                        <span class="form__subtitle">Отображать фото в отзыве?</span>
-                                        <div class="form__radio-wrapp">
-                                            <label class="form__radio-label">
-                                                <input type="radio" name="quest" class="form_radio-radio">
-                                                <span class="form__radio-fake"></span>
-                                                <span class="form__radio-text">да</span>
-                                            </label>
-                                            <label class="form__radio-label">
-                                                <input type="radio" name="quest" class="form_radio-radio">
-                                                <span class="form__radio-fake"></span>
-                                                <span class="form__radio-text">нет</span>
-                                            </label>
+
+                            <div class="form__content">
+                                <div class="form__row">
+                                    <label class="form__label">
+                                        <div class="form__subtitle">Ваше имя</div>
+                                        <input type="text" class="form__input" placeholder="Андрей">
+                                    </label>
+                                    <label class="form__label">
+                                        <div class="form__subtitle form__subtitle-vk">Ссылка на профиль вк</div>
+                                        <input type="text" class="form__input" placeholder="vk.com/example">
+                                    </label>
+                                </div>
+                                <div class="form__row">
+                                    <label class="form__label form__label-textarea">
+                                        <div class="form__subtitle">Текст отзыва</div>
+                                        <textarea name="" id="" class=" form__input form__texarea"
+                                                  placeholder="мне   понравилось"></textarea>
+                                    </label>
+                                </div>
+                                <div class="form__row ">
+                                    <label class="form__label bottom-row">
+                                        <div class="form__quest">
+                                            <span class="form__subtitle">Отображать фото в отзыве?</span>
+                                            <div class="form__radio-wrapp">
+                                                <label class="form__radio-label">
+                                                    <input type="radio" name="quest" class="form_radio-radio">
+                                                    <span class="form__radio-fake"></span>
+                                                    <span class="form__radio-text">да</span>
+                                                </label>
+                                                <label class="form__radio-label">
+                                                    <input type="radio" name="quest" class="form_radio-radio">
+                                                    <span class="form__radio-fake"></span>
+                                                    <span class="form__radio-text">нет</span>
+                                                </label>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <button class="form__button" type="submit"><span class="form__button-span">Отправить</span></button>
-                                </label>
+                                        <button class="form__button" type="submit"><span class="form__button-span">Отправить</span>
+                                        </button>
+                                    </label>
+                                </div>
                             </div>
-                        </div>
                     </div>
                 </div>
 

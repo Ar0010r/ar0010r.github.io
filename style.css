@@ -118,6 +118,7 @@ ul li {
 .contacts__schedule:hover .contacts__timetable{
     opacity: 1;
     right: -15px;
+    transition: 200ms;
 }
 
 .contacts__info {
@@ -145,17 +146,19 @@ ul li {
     display: flex;
 }
 .nav {
-    margin-top: -5px;
-    margin-left: 5px;
-    margin-bottom: -6px;
+    margin-top: 7px;
+    margin-left: 12px;
 
+}
 
+.main .nav {
+    margin-left: 3px;
 
 }
 .nav__list {
     font-size: 12px;
     font-weight: 700;
-    line-height: 54px;
+    line-height: 24px;
     letter-spacing: 2.4px;
     text-transform: uppercase;
     color: #7a97c8;
@@ -189,6 +192,7 @@ ul li {
 }
 .nav__link:hover {
     color: #221f1f;
+
 }
 
 .nav__link:before {
@@ -239,7 +243,7 @@ ul li {
 }
 
 .main {
-    margin-left: 10px;
+    margin-left: 15px;
 
 
 }
@@ -264,7 +268,7 @@ ul li {
     max-width: 100%;
     height: 294px;
 
-    margin-left: 10px;
+    margin-left: 5px;
 
 }
 
@@ -411,6 +415,11 @@ ul li {
     margin-bottom: 26px;
 }
 
+.top-rate + .social-networks {
+    margin-top:  20px;
+
+}
+
 .rates__item-name {
     margin-bottom: 20px;
 }
@@ -418,9 +427,8 @@ ul li {
     margin-bottom: 8px;
 }
 .news {
-    margin-top: 20px;
-    margin-left: 5px;
-    margin-bottom: 45px;
+    margin-top: 30px;
+    margin-bottom: 50px;
 
 }
 
@@ -574,9 +582,10 @@ ul li {
     padding: 5px 10px;
     border-radius: 15%;
 }
-.pagination__link:hover{
+.pagination__link:hover, .pagination__link-active{
     color: white;
     background-color: #4b73b5;
+    transition: 200ms;
 }
  .pagination__button-prev {
     margin-left: 20px;
@@ -591,6 +600,7 @@ ul li {
 .pagination__button-prev:hover, .pagination__button-next:hover {
     opacity: 1;
     color: black;
+    transition: 200ms;
 }
 
 .footer {
@@ -598,7 +608,7 @@ ul li {
 }
 
 .footer__container {
-    height: 77px;
+    min-height: 77px;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -628,10 +638,20 @@ ul li {
 }
 
 .social-networks {
-    margin-top: 19px;
+    margin-top: 29px;
     margin-left: 15px;
 
 }
+
+.social-networks__link{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    width: 100%;
+    height: 100%;
+}
+
 
 .social-networks__title{
     display: block;
@@ -646,6 +666,7 @@ ul li {
 }
 .social-networks__item {
     display: inline-block;
+    position: relative;
 
 }
 
@@ -729,12 +750,10 @@ ul li {
 }
 
 .crew {
-    margin-bottom: 80px;
+    margin-bottom: 34px;
+
     margin-left: 12px;
-    margin-top: -5px;
-}
-.crew__title{
-    margin-top: 30px;
+    margin-top: 35px;
 }
 
 .crew__list {
@@ -742,8 +761,6 @@ ul li {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    margin-left: -20px;
-    margin-bottom: -50px;
 }
 .crew__item{
     width: calc(100% / 3 - 20px);
@@ -821,7 +838,7 @@ ul li {
     flex-wrap: wrap;
     align-items: center;
     /*margin-bottom: 40px;*/
-    margin-bottom: -60px;
+
 }
 
 .partners__title{
@@ -833,25 +850,38 @@ ul li {
 }
 .partners__item {
 
-    margin-bottom: 40px;
+    margin-bottom: 35px;
+
     text-align: center;
     max-width: 100%;
 
 }
 
-.partners__img {
+.partners__item:hover {
+    cursor: pointer;
+}
 
+.partners__item:last-child {
+    margin-bottom: 0;
+}
+
+.partners__img {
+    /* Style for "Vector Sma" */
 
     filter: grayscale(100%);
 }
 .partners__img:hover{
     filter:grayscale(0);
+    transition: 200ms;
+}
+
+.partners + .social-networks {
+    margin-top: 20px;
 }
 
 /*===============REVIEW========================*/
 
 .review {
-    margin-top: -22px;
     margin-left: 20px;
     margin-bottom: 30px;
 
@@ -877,7 +907,7 @@ ul li {
     margin-left: 220px;
 
 }
-.banner-container {
+.sidebar-container {
     width: 24%;
     margin-right: 1px;
 }
@@ -922,29 +952,35 @@ ul li {
 .review-form {
     margin-top: 65px;
     margin-bottom: 50px;
-    /*margin-left: 20px;*/
-    width: 100%;
+    width: 88%;
     margin-left: 20px;
-
-
-
-
-
-
 }
 .form{
-    width: 100%;
+
     background: #f5f5f5;
     padding: 50px 95px;
 
 }
 
+.form__title {
+    display: inline-block;
+}
+
+.form-wrap {
+    display: inline-block;
+}
+
 .form__content{
-    margin-top: 30px;
+    margin-top: 22px;
+
+
+
 }
 .form__row {
     display: flex;
     margin-bottom: 18px;
+
+
 }
 .form__row:last-child {
     margin-bottom: 0;
@@ -952,13 +988,13 @@ ul li {
 
 .form__label {
     /*flex: 1;*/
-    width: 40%;
+    width: 50%;
 
     margin-left: 20px;
 }
 
 .form__label-textarea {
-    width: 85%;
+    width: 100%;
 
 }
 
@@ -1007,7 +1043,7 @@ ul li {
 }
 
 .form__quest {
-    margin-top: -10px;
+    margin-top: -5px;
     display: flex;
     flex-direction: column;
 }
@@ -1026,7 +1062,6 @@ ul li {
     border-radius: 4px;
     cursor: pointer;
     padding: 0;
-    margin-right: 110px;
 
 
 
@@ -1096,8 +1131,8 @@ ul li {
     width: 8px;
 }
 
-.form_radio-radio:checked + .form__radio-text{
-    color: green;
+.form_radio-radio:checked + .form__radio-fake +.form__radio-text{
+    color: #4b73b5;
 }
 
 .form__radio-text{
