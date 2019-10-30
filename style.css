@@ -856,7 +856,7 @@ ul li {
 }
 
 .partners__list {
-    margin-top: 40px;
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -875,7 +875,7 @@ ul li {
 
 .partners__item {
 
-    margin-bottom: 35px;
+    margin-bottom: 55px;
 
     text-align: center;
     max-width: 100%;
@@ -905,22 +905,59 @@ ul li {
     margin-top: 20px;
 }
 
+.siberian{
+    width: 101px;
+    height: 49px;
+}
+
+.ural {
+    width: 62px;
+    height: 49px;
+}
+
+.bmp {
+    width: 121px;
+    height: 23px;
+}
+
+.one {
+    width: 107px;
+    height: 48px;
+}
+
+.tetra {
+
+
+    width: 122px;
+    height: 49px;
+}
+
+.bing {
+
+    width: 35px;
+    height: 49px;
+}
+
 /*===============REVIEW========================*/
 
 .review {
+
     margin-left: 20px;
     margin-bottom: 30px;
+    margin-top: 20px;
+
 
 
 }
 
 .review__title {
-    padding-top: 28px;
+
 }
 
 .review__list {
     padding-top: 15px;
     margin-left: 10px;
+    margin-bottom: 50px;
 
 }
 
@@ -929,7 +966,6 @@ ul li {
 }
 
 .review .pagination {
-    margin-top: 40px;
     margin-left: 220px;
 
 }
@@ -940,7 +976,7 @@ ul li {
 }
 
 .banner {
-    margin-top: 10px;
+    margin-top: 7px;
 
     width: 100%;
 
