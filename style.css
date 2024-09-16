@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 130%;
+  font-size: 16px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea, select {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+  border: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+  font-family: "Inter", sans-serif;
+  color: inherit;
+  font-weight: 400;
+  line-height: 130%;
+  font-size: 16px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+/* h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 500;
+} */
+
+/*--------------------*/
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 130%;
+  color: #697586;
+  background: #f5f5f5;
+  padding: 30px;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+h4 {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+
+h5 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.wrapper {
+  background: #fff;
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+  padding: 40px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.text-section {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.mb-8 {
+  margin-bottom: 8px;
+}
+
+.mb-12 {
+  margin-bottom: 12px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mb-28 {
+  margin-bottom: 28px;
+}
+
+.d-flex-btw {
+ display: flex;
+ justify-content: space-between;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.text-grey {
+  color: #697586;
+}
+
+.text-black {
+  color: black;
+}
+
+.accented {
+  font-size: 16px;
+}
+
+.accented span {
+  font-weight: 500;
+}
+.accented a {
+  font-weight: 400;
+}
+
+.opacity-60 {
+  opacity: 0.6;
+}
